@@ -1,7 +1,10 @@
+import React from 'react'
+import Header from './components/Header/Header'
+
 import styles from './home.module.scss'
 
 export default function Home() {
-  return (
-    <>Hello APP</>
-  )
+  return (<>
+    <Header></Header>
+  </>)
 }
