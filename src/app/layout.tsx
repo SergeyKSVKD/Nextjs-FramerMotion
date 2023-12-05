@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.scss'
+import styles from './layout.module.scss'
+import cn from 'classnames'
 
 export const metadata: Metadata = {
   title: 'framer motion',
@@ -11,9 +13,53 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const line: string[] = [
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+    "circle",
+    "x-shape",
+  ]
+  const lines: string[] = [
+    'line1',
+    'line2',
+    'line3',
+    'line4',
+  ]
+
   return (
     <html lang="ru-Ru">
-      <body>{children}</body>
+      <body>
+        <div className={styles.lines}>
+          {lines.map((_, index) => {
+            return <div key={index} className={styles.line}>
+              {line.map((shape, index) => {
+                return <div key={index} className={cn({
+                  [styles.shape]: shape === 'circle',
+                  [styles.x_shape]: shape === 'x-shape'
+                })}>
+                </div>
+              })}
+            </div>
+          })}
+        </div>
+        {children}
+      </body>
     </html>
   )
 }

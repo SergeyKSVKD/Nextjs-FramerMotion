@@ -51,7 +51,7 @@ const Header = () => {
             <div className={styles.header_content}>
                 <div className={styles.image_content}>
                     <div className={styles.image}>
-                        <Image src={Monkey} alt="hero" width={400} draggable="false"
+                        <Image src={Monkey} alt="hero" width={300} draggable="false"
                             style={{
                                 transform: hoverHero.transform,
                                 transition: hoverHero.transition,

@@ -42,8 +42,9 @@
     gap: 4rem;
     min-height: calc(100vh - 10vh);
     .text_content {
+        z-index: 5;
         > h1 {
-            font-size: clamp(2rem, 5vw, 5rem);
+            font-size: clamp(2rem, 4vw, 4rem);
             color: #f2994a;
             transition: all 0.01s linear;
             padding-bottom: 1.5rem;
