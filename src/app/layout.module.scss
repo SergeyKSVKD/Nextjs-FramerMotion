@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
     justify-content: space-evenly;
-    z-index: 0;
     pointer-events: none;
         .line {
             position: relative;
@@ -58,4 +57,11 @@
             background-color: var(--color-border);
             border-radius: 5px;
         }
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(5, 30rem);
+    gap: 4rem;
+    position: absolute;
 }

@@ -22,8 +22,8 @@ const Card = ({ title, description, image }: cardProps) => {
                     <p>{description}</p>
                 </div>
                 <Image src={image} alt="image" style={{
-                    width: "100%",
-                    height: "100%",
+                    width: "300px",
+                    height: "400px",
                     objectFit: "cover",
                     objectPosition: "center",
                     borderRadius: "8px",

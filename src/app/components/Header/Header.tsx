@@ -7,6 +7,7 @@ import styles from "./header.module.scss"
 
 import Logo from "../../public/logo.svg"
 import Monkey from "../../public/images/monkey.png"
+import Alf from "../../public/images/alf.png"
 import { FaRocket, FaWallet } from "react-icons/fa"
 import { Abril_Fatface } from "next/font/google"
 import useHover3d from "@/app/utils/useHover3d"
@@ -51,7 +52,7 @@ const Header = () => {
             <div className={styles.header_content}>
                 <div className={styles.image_content}>
                     <div className={styles.image}>
-                        <Image src={Monkey} alt="hero" width={300} draggable="false"
+                        <Image src={Alf} alt="hero" width={300} draggable="false"
                             style={{
                                 transform: hoverHero.transform,
                                 transition: hoverHero.transition,
